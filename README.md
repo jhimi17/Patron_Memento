@@ -7,7 +7,7 @@
 
 El programa se trata de Editor de Texto escrito en el lenguaje Python con la librería Tkinter y aplicando principalmente el patrón de diseño de comportamiento “MEMENTO”.
 
-# 1.	
+# 1.	\
 Inicialmente se importan los módulos o bibliotecas necesarios de Tkinter: 
 
 •	Tkinter: Para la creación de la interfaz gráfica del programa<br>
