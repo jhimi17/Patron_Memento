@@ -96,3 +96,9 @@ INTERFAZ DEL EDITOR DE TEXTO CON EL PATRÓN MEMENTO
 # Interfaz del editor de texto con el patrón memento
 ![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/777d20cd-e60c-4bff-8157-9c522512d1b3)
 
+# Diagrama de clases.
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/9aee0c20-8ed9-4796-996d-85f248fca2ed)
+
+# Diagrama de secuencia.
+
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/7d3de3a5-e35b-4382-a9c2-2a3921bfb1eb)
