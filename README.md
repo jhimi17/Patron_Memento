@@ -27,7 +27,7 @@ MÉTODOS<br>
 •	obtener_texto(self): devuelve el texto actual del editor.<br>
 
 # 3.	
-Se define la clase Memento que representa un objeto que guarda un estado del editor en un momento dado. Tiene su atributo y los siguientes métodos:<br>
+Se define la clase Memento que representa un objeto que guarda un estado del editor en un momento dado. Tiene su atributo y los siguientes métodos:<br><br>
 ATRIBUTO<br>
       Estado(string): Inicializa el objeto Memento con un estado dado.<br>
 MÉTODO<br>
