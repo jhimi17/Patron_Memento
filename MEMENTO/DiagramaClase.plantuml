@@ -1,0 +1,61 @@
+@startuml DiagramaClase
+
+class Editor {
+  - texto: string
+  
+  + escribir(texto: string)
+  + guardar_estado(): Memento
+  + restaurar_estado(memento: Memento)
+  + obtener_texto(): string
+}
+
+class Memento {
+  - estado: string
+  
+  + obtener_estado(): string
+}
+
+class CaretakerEditor {
+  - historial: list<Memento>
+  
+  + guardar_estado(estado: Memento)
+  + obtener_estado(indice: int): Memento
+  + deshacer()
+}
+
+class CaretakerList {
+  - caretakers: list<CaretakerEditor>
+  
+  + agregar_caretaker(caretaker: CaretakerEditor)
+  + obtener_caretaker(indice: int): CaretakerEditor
+  + eliminar_caretaker(indice: int)
+  + deshacer_todos()
+}
+
+class EditorInterfaz {
+  - editor: Editor
+  - ventana: tk.Tk
+  - area_texto: tk.Text
+  - archivo_actual: string
+  
+  + guardar()
+  + deshacer()
+  + abrir_archivo()
+  + guardar_archivo()
+  + guardar_como()
+  + iniciar()
+}
+
+class EditorInterfazAvanzado {
+  
+  + contar_palabras()
+  + mayusculas()
+}
+
+Editor "1" *- "1..*" Memento
+CaretakerEditor "1" -- "1..*" Memento
+CaretakerList "1" *- "1..*" CaretakerEditor
+EditorInterfaz "1" -- "1" Editor
+EditorInterfazAvanzado --|> EditorInterfaz
+
+@enduml

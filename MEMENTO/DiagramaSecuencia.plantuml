@@ -1,0 +1,50 @@
+@startuml DiagramaSecuencia
+skinparam monochrome true
+
+actor Usuario
+participant "EditorInterfaz" as EI
+participant "Editor" as E
+participant "CaretakerEditor" as CE
+participant "CaretakerList" as CL
+participant "EditorInterfazAvanzado" as EIA
+
+User -> EI: iniciar()
+User -> EI: abrir_archivo()
+EI -> E: restaurar_estado()
+User -> EI: guardar()
+EI -> E: guardar_estado()
+EI -> E: escribir()
+User -> EI: deshacer()
+EI -> E: restaurar_estado()
+User -> EI: guardar_como()
+EI -> EI: guardar_archivo()
+EI -> E: escribir()
+EI -> E: guardar_estado()
+EI -> E: obtener_texto()
+EI -> EI: mostrar_mensaje()
+User -> EI: contar_palabras()
+EI -> E: obtener_texto()
+EI -> EI: contar_palabras()
+User -> EI: mayusculas()
+EI -> E: obtener_texto()
+EI -> E: escribir()
+EI -> E: guardar_estado()
+
+EI -> CE: guardar_estado()
+CE -> CL: agregar_caretaker()
+CL -> CE: guardar_estado()
+CE -> CL: obtener_caretaker()
+CL -> CE: deshacer()
+CL -> CE: deshacer_todos()
+
+EI -> EIA: contar_palabras()
+EIA -> E: obtener_texto()
+EIA -> E: contar_palabras()
+EIA -> E: escribir()
+EIA -> E: guardar_estado()
+EIA -> E: obtener_texto()
+EIA -> E: escribir()
+EIA -> E: guardar_estado()
+
+@enduml
+
