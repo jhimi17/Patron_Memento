@@ -36,6 +36,8 @@ ATRIBUTO<br>
 MÉTODO<br>
 •	obtener_estado(self): devuelve el estado guardado en el Memento.<br>
 
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/46d93539-cb71-4df5-bdf8-9471aa875a2b)
+
 # 4.	
 Se define la clase CaretakerEditor que maneja el historial de estados del editor. Tiene su atributo y los siguientes métodos:<br><br>
 ATRIBUTO <br>
@@ -44,6 +46,8 @@ MÉTODOS<br>
 •	guardar_estado(self, estado): guarda un estado en el historial.<br>
 •	obtener_estado(self, indice): obtiene un estado del historial dado un índice.<br>
 •	deshacer(self): elimina el estado más reciente del historial (deshacer un cambio).<br>
+
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/4997b969-a64e-4b09-91ce-919bfe3b6d5b)
 
 # 5.	
 Se define la clase CaretakerList que maneja una lista de CaretakerEditor. Tiene su atributo y los siguientes métodos:<br><br>
@@ -54,6 +58,8 @@ MÉTODOS<br>
 •	obtener_caretaker(self, indice): obtiene un caretaker de la lista dado un índice.<br>
 •	eliminar_caretaker(self, indice): elimina un caretaker de la lista dado un índice.<br>
 •	deshacer_todos(self): realiza la operación de deshacer en todos los caretakers de la lista.<br>
+
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/bf4bd12c-1f5b-4ac3-af21-3b5ed8da47e3)
 
 # 6.	
 Se define la clase EditorInterfaz que representa la interfaz de usuario del editor. Tiene sus atributos y los siguientes métodos:<br><br>
@@ -78,9 +84,14 @@ Se define la clase EditorInterfazAvanzado que se hereda de la clase EditorInterf
 
 # 8.	
 Se crean instancias de las clases Editor, CaretakerEditor, CaretakerList y EditorInterfazAvanzado.
+
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/20d7eb17-1493-43cf-bbce-095d0b1062ac)
+
 # 10.	
 Se llama al método iniciar() de la instancia de EditorInterfazAvanzado para iniciar la interfaz de usuario del editor.<br>
 INTERFAZ DEL EDITOR DE TEXTO CON EL PATRÓN MEMENTO
+
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/d0fda09a-c046-41b7-a061-15702bcbdbca)
 
 # Interfaz del editor de texto con el patron memento
 ![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/777d20cd-e60c-4bff-8157-9c522512d1b3)
