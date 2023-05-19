@@ -1,5 +1,5 @@
 # Patron de diseño de comportamiento "Memento"
----INTEGRANTES---.
+---INTEGRANTES---
 
 ■  Sánchez Cabrera, Kevin Kennedy.<br>
 ■  Marcelo Luyo, Jhimi Misael.
@@ -25,6 +25,9 @@ MÉTODOS<br>
 •	guardar_estado(self): crea y devuelve un objeto Memento para guardar el estado actual del editor.<br>
 •	restaurar_estado(self, memento): restaura el estado del editor utilizando un objeto Memento.<br>
 •	obtener_texto(self): devuelve el texto actual del editor.<br>
+
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/d6a14d63-43af-4d22-b534-6840a95b661d)
+
 
 # 3.	
 Se define la clase Memento que representa un objeto que guarda un estado del editor en un momento dado. Tiene su atributo y los siguientes métodos:<br><br>
