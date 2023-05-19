@@ -7,7 +7,7 @@
 
 El programa se trata de Editor de Texto escrito en el lenguaje Python con la librería Tkinter y aplicando principalmente el patrón de diseño de comportamiento “MEMENTO”.
 
-# 1.	\
+# 1.	
 Inicialmente se importan los módulos o bibliotecas necesarios de Tkinter: 
 
 •	Tkinter: Para la creación de la interfaz gráfica del programa<br>
@@ -17,21 +17,21 @@ Inicialmente se importan los módulos o bibliotecas necesarios de Tkinter:
 ![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/38e82f77-0b19-4f37-b50f-20e95c1969cf)
 
 # 2.	
-Se define la primera clase Editor que representa el editor de texto. Tiene su atributo y los siguientes métodos:
-ATRIBUTO
-Texto (string): inicializa la instancia del editor con un atributo de texto vacío.
-MÉTODOS
-•	escribir(self, texto): agrega el texto proporcionado al atributo de texto existente.
-•	guardar_estado(self): crea y devuelve un objeto Memento para guardar el estado actual del editor.
-•	restaurar_estado(self, memento): restaura el estado del editor utilizando un objeto Memento.
-•	obtener_texto(self): devuelve el texto actual del editor.
+Se define la primera clase Editor que representa el editor de texto. Tiene su atributo y los siguientes métodos:<br>
+ATRIBUTO<br>
+Texto (string): inicializa la instancia del editor con un atributo de texto vacío.<br>
+MÉTODOS<br>
+•	escribir(self, texto): agrega el texto proporcionado al atributo de texto existente.<br>
+•	guardar_estado(self): crea y devuelve un objeto Memento para guardar el estado actual del editor.<br>
+•	restaurar_estado(self, memento): restaura el estado del editor utilizando un objeto Memento.<br>
+•	obtener_texto(self): devuelve el texto actual del editor.<br>
 
 # 3.	
-Se define la clase Memento que representa un objeto que guarda un estado del editor en un momento dado. Tiene su atributo y los siguientes métodos:
-ATRIBUTO
-      Estado(string): Inicializa el objeto Memento con un estado dado.
-MÉTODO
-•	obtener_estado(self): devuelve el estado guardado en el Memento.
+Se define la clase Memento que representa un objeto que guarda un estado del editor en un momento dado. Tiene su atributo y los siguientes métodos:<br>
+ATRIBUTO<br>
+      Estado(string): Inicializa el objeto Memento con un estado dado.<br>
+MÉTODO<br>
+•	obtener_estado(self): devuelve el estado guardado en el Memento.<br>
 
 # 4.	
 Se define la clase CaretakerEditor que maneja el historial de estados del editor. Tiene su atributo y los siguientes métodos:
