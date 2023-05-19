@@ -8,7 +8,8 @@
 
 El programa se trata de Editor de Texto escrito en el lenguaje Python con la librería Tkinter y aplicando principalmente el patrón de diseño de comportamiento “MEMENTO”.
 
-1.	Inicialmente se importan los módulos o bibliotecas necesarios de Tkinter: 
+# 1.	
+Inicialmente se importan los módulos o bibliotecas necesarios de Tkinter: 
 •	Tkinter: Para la creación de la interfaz gráfica del programa
 •	Messagebox: Para la salida de una ventana emergente con el resultado esperado.
 •	Filedialog: Para abrir y guardar archivos en este caso solo en formato texto.
@@ -22,19 +23,25 @@ MÉTODOS
 •	guardar_estado(self): crea y devuelve un objeto Memento para guardar el estado actual del editor.
 •	restaurar_estado(self, memento): restaura el estado del editor utilizando un objeto Memento.
 •	obtener_texto(self): devuelve el texto actual del editor.
-3.	Se define la clase Memento que representa un objeto que guarda un estado del editor en un momento dado. Tiene su atributo y los siguientes métodos:
+
+# 3.	
+Se define la clase Memento que representa un objeto que guarda un estado del editor en un momento dado. Tiene su atributo y los siguientes métodos:
 ATRIBUTO
       Estado(string): Inicializa el objeto Memento con un estado dado.
 MÉTODO
 •	obtener_estado(self): devuelve el estado guardado en el Memento.
-4.	Se define la clase CaretakerEditor que maneja el historial de estados del editor. Tiene su atributo y los siguientes métodos:
+
+# 4.	
+Se define la clase CaretakerEditor que maneja el historial de estados del editor. Tiene su atributo y los siguientes métodos:
 ATRIBUTO 
 Historial(tipo lista): inicializa la instancia de CaretakerEditor con una lista vacía para almacenar el historial de estados.
 MÉTODOS
 •	guardar_estado(self, estado): guarda un estado en el historial.
 •	obtener_estado(self, indice): obtiene un estado del historial dado un índice.
 •	deshacer(self): elimina el estado más reciente del historial (deshacer un cambio).
-5.	Se define la clase CaretakerList que maneja una lista de CaretakerEditor. Tiene su atributo y los siguientes métodos:
+
+# 5.	
+Se define la clase CaretakerList que maneja una lista de CaretakerEditor. Tiene su atributo y los siguientes métodos:
 ATRIBUTO
 CaretakerList(tipo lista): inicializa la instancia de CaretakerList con una lista vacía para almacenar los caretakers.
 MÉTODOS
@@ -42,7 +49,9 @@ MÉTODOS
 •	obtener_caretaker(self, indice): obtiene un caretaker de la lista dado un índice.
 •	eliminar_caretaker(self, indice): elimina un caretaker de la lista dado un índice.
 •	deshacer_todos(self): realiza la operación de deshacer en todos los caretakers de la lista.
-6.	Se define la clase EditorInterfaz que representa la interfaz de usuario del editor. Tiene sus atributos y los siguientes métodos:
+
+# 6.	
+Se define la clase EditorInterfaz que representa la interfaz de usuario del editor. Tiene sus atributos y los siguientes métodos:
 ATRIBUTO
 Editor(Editor): Inicializa la interfaz de usuario con una instancia de Editor.
 Ventana(tk.Tk): Crea la ventana principal.
