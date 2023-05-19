@@ -1,8 +1,7 @@
 # Patron de diseño de comportamiento "Memento"
 ---INTEGRANTES---.
 
-■  Sánchez Cabrera, Kevin Kennedy.
-
+■  Sánchez Cabrera, Kevin Kennedy.<br>
 ■  Marcelo Luyo, Jhimi Misael.
 
 
@@ -12,8 +11,8 @@ El programa se trata de Editor de Texto escrito en el lenguaje Python con la lib
 Inicialmente se importan los módulos o bibliotecas necesarios de Tkinter: 
 
 •	Tkinter: Para la creación de la interfaz gráfica del programa<br>
-•	Messagebox: Para la salida de una ventana emergente con el resultado esperado.
-•	Filedialog: Para abrir y guardar archivos en este caso solo en formato texto.
+•	Messagebox: Para la salida de una ventana emergente con el resultado esperado.<br>
+•	Filedialog: Para abrir y guardar archivos en este caso solo en formato texto.<br>
 
 ![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/38e82f77-0b19-4f37-b50f-20e95c1969cf)
 
