@@ -7,11 +7,14 @@
 
 
 El programa se trata de Editor de Texto escrito en el lenguaje Python con la librería Tkinter y aplicando principalmente el patrón de diseño de comportamiento “MEMENTO”.
+
 1.	Inicialmente se importan los módulos o bibliotecas necesarios de Tkinter: 
 •	Tkinter: Para la creación de la interfaz gráfica del programa
 •	Messagebox: Para la salida de una ventana emergente con el resultado esperado.
 •	Filedialog: Para abrir y guardar archivos en este caso solo en formato texto.
-2.	Se define la primera clase Editor que representa el editor de texto. Tiene su atributo y los siguientes métodos:
+
+# 2.	
+Se define la primera clase Editor que representa el editor de texto. Tiene su atributo y los siguientes métodos:
 ATRIBUTO
 Texto (string): inicializa la instancia del editor con un atributo de texto vacío.
 MÉTODOS
