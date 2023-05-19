@@ -78,3 +78,7 @@ Se crean instancias de las clases Editor, CaretakerEditor, CaretakerList y Edito
 # 10.	
 Se llama al método iniciar() de la instancia de EditorInterfazAvanzado para iniciar la interfaz de usuario del editor.<br>
 INTERFAZ DEL EDITOR DE TEXTO CON EL PATRÓN MEMENTO
+
+# Interfaz del editor de texto con el patron memento
+![image](https://github.com/jhimi17/Patron_Memento/assets/101279472/777d20cd-e60c-4bff-8157-9c522512d1b3)
+
