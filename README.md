@@ -10,6 +10,7 @@ El programa se trata de Editor de Texto escrito en el lenguaje Python con la lib
 
 # 1.	
 Inicialmente se importan los módulos o bibliotecas necesarios de Tkinter: 
+
 •	Tkinter: Para la creación de la interfaz gráfica del programa
 •	Messagebox: Para la salida de una ventana emergente con el resultado esperado.
 •	Filedialog: Para abrir y guardar archivos en este caso solo en formato texto.
